@@ -15,7 +15,7 @@ export default class SwipeViews extends React.Component {
       translation,
       clientX: null,
       animate: true,
-      pageWidth: window.innerWidth
+      pageWidth: (typeof window !== "undefined" ? window.innerWidth : "")
     };
   }
 
